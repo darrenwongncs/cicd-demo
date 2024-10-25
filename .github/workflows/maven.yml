@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: read
       actions: read
-      dependencies: write
+      # Remove the 'dependencies' permission; it's not valid at the job level
 
     steps:
     - uses: actions/checkout@v4
